@@ -2,7 +2,7 @@
     {
         "id": 1,
         "firstName": "Abbott",
-        "lastName": "Sazan",
+        "lastName": "Peterson",
         "department": "HR",
         "title": "Chief Human Resource Officer",
         "birthday": "7/16/1987",
@@ -133,5 +133,32 @@
         "title": "Computer Systems Analyst",
         "birthday": "1/5/1987",
         "salary": 110000
+    },
+    {
+        "id": 17,
+        "firstName": "Joe",
+        "lastName": "Martin",
+        "department": "Sales",
+        "title": "Sales Director",
+        "birthday": "7/19/1986",
+        "salary": 95000
+    },
+    {
+        "id": 18,
+        "firstName": "Peter",
+        "lastName": "Godwin",
+        "department": "Sales",
+        "title": "Sales Associate",
+        "birthday": "4/22/1993",
+        "salary": 65000
+    },
+    {
+        "id": 19,
+        "firstName": "Sarah",
+        "lastName": "Smith",
+        "department": "Finance Department",
+        "title": "Senior Director of Finance",
+        "birthday": "9/2/1978",
+        "salary": 205000
     }
 ]

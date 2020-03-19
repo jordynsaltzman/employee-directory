@@ -4,7 +4,6 @@ import API from "../../utils/API";
 import employeeDb from "../../db/db.json";
 import SearchForm from "../../components/SearchForm";
 import SearchResults from "../../components/SearchResults";
-import Alert from "../../components/Alert";
 
 const Search = () => {
   const [employeeState, setEmployeeState] = useState({
@@ -41,10 +40,11 @@ const Search = () => {
   useEffect(() => {
     // When the component mounts, update the title to be Employee Directory
     document.title = "Employee Directory";
+    //load employees
     refreshEmployees();
   }, []);
 
-  //handleinputchange funtion
+  //start of handleinputchange funtion for the search bar
   const handleInputChange = event => {
     setEmployeeState({
       employeeDb,
@@ -63,10 +63,7 @@ const Search = () => {
             .toLowerCase()
             .indexOf(event.target.value.toLowerCase()) > -1 ||
           person.title.toLowerCase().indexOf(event.target.value.toLowerCase()) >
-            -1 ||
-          person.department
-            .toLowerCase()
-            .indexOf(event.target.value.toLowerCase()) > -1
+            -1
         );
       } else {
         return person;
@@ -89,12 +86,9 @@ const Search = () => {
       });
     }
   };
-  //end of handleInput change function//
+  //end of handleInput change function
 
-  const handleFormSubmit = event => {
-    event.preventDefault();
-  };
-
+  //function to sort employee db by salary
   const handleDropdownChange = event => {
     setEmployeeState({
       ...employeeState,
@@ -107,6 +101,7 @@ const Search = () => {
         ? a.salary - b.salary
         : b.salary - a.salary;
     });
+
     console.log(sortedEmployees);
     console.log("EMPLOYEESTATE.DROPDOWNVAL ");
     console.log(employeeState.dropdownVal);
@@ -115,20 +110,23 @@ const Search = () => {
   return (
     <EmployeeContext.Provider value={employeeState}>
       <div>
-        <SearchForm
-          handleFormSubmit={handleFormSubmit}
-          handleInputChange={handleInputChange}
-          results={search}
-        />
+        <SearchForm handleInputChange={handleInputChange} results={search} />
         <div className="row">
-          <div className="col-md-12" style={{ textAlign: "center" }}>
+          <div
+            className="col-md-12"
+            style={{
+              textAlign: "center",
+              fontFamily: "'Work Sans', sans-serif"
+            }}
+          >
             <p>{employeeState.employeeDb.length} Results</p>
             <label htmlFor="sortBy">Sort By:</label>
             <select
+              style={{ borderRadius: 3, margin: 5 }}
               onChange={handleDropdownChange}
               value={employeeState.dropdownVal}
             >
-              <option value="0">Select One:</option>
+              <option value="0">Select One</option>
               <option value="1">Salary: Low - High</option>
               <option value="2">Salary: High - Low</option>
             </select>

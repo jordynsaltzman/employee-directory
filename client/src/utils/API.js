@@ -5,7 +5,7 @@ import axios from "axios";
 export default {
   employeeImage: function(query) {
     return axios.get(
-      "https://cors-anywhere.herokuapp.com/https://api.adorable.io/avatars/160/" +
+      "https://cors-anywhere.herokuapp.com/https://api.adorable.io/avatars/140/" +
         query +
         "@adorable.png"
     );
