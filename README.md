@@ -3,7 +3,7 @@ An employee directory app built with React, created for The Coding Bootcamp at J
 
 This assignment required us to break up our application's UI into components, manage component state, and respond to user events. This assignment gave me some good experience using React hooks such as useState and useEffect, and I also got additional practice using JavaScript array methods like map and filter. 
 
-I originally wanted to generate my employee data from the https://randomuser.me/ API, but unfortunately the site's server was down when I was working on it and had to resort to using my own data from a JSON file. I still wanted to incorporate an API, so I ended up getting "headshots" from the Adorable Avatars API [https://api.adorable.io/]. 
+I originally wanted to generate my employee data from the https://randomuser.me/ API, but unfortunately the site's server was down when I was working on it and had to resort to using my own data from a JSON file. I still wanted to incorporate an API, so I ended up getting "headshots" from the (Adorable Avatars API)[https://api.adorable.io/]. 
 
 ## Assignment
 Given a table of random employees, when the user loads the page, a table of employees will render.
