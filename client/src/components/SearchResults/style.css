@@ -1,0 +1,16 @@
+.employeeCard {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 15px 35px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.712);
+}
+
+.cardRow {
+  justify-content: center;
+}
+.icon {
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.651);
+}

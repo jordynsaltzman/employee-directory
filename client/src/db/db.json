@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "firstName": "Abbott",
+        "lastName": "Sazan",
+        "department": "HR",
+        "title": "Chief Human Resource Officer",
+        "birthday": "7/16/1987",
+        "salary": 120000
+    },
+    {
+        "id": 2,
+        "firstName": "Carlena",
+        "lastName": "Lopez",
+        "department": "C-Suite",
+        "title": "CEO",
+        "birthday": "9/23/1976",
+        "salary": 330000
+    },
+    {
+        "id": 3,
+        "firstName": "Nick",
+        "lastName": "Tindell",
+        "department": "C-Suite",
+        "title": "COO",
+        "birthday": "11/5/1964",
+        "salary": 270000
+    },
+    {
+        "id": 4,
+        "firstName": "Francisco",
+        "lastName": "Delpino",
+        "department": "Finance Department",
+        "title": "CFO",
+        "birthday": "1/18/1973",
+        "salary": 200000
+    },
+    {
+        "id": 5,
+        "firstName": "Max",
+        "lastName": "Rathburn",
+        "department": "Finance Department",
+        "title": "Accountant",
+        "birthday": "11/21/1981",
+        "salary": 80000
+    },
+    {
+        "id": 6,
+        "firstName": "Marcus",
+        "lastName": "Smith",
+        "department": "Finance Department",
+        "title": "Accountant",
+        "birthday": "7/9/1992",
+        "salary": 80000
+    },
+    {
+        "id": 7,
+        "firstName": "Gilda",
+        "lastName": "Moritz",
+        "department": "Finance Department",
+        "title": "Senior Accountant",
+        "birthday": "2/26/1957",
+        "salary": 95000
+    },
+    {
+        "id": 8,
+        "firstName": "John",
+        "lastName": "Grabowski",
+        "department": "Finance Department",
+        "title": "Junior Accountant",
+        "birthday": "5/12/1996",
+        "salary": 40000
+    },
+    {
+        "id": 9,
+        "firstName": "Nick",
+        "lastName": "Mayhall",
+        "department": "IT Department",
+        "title": "CIO",
+        "birthday": "12/8/1985",
+        "salary": 200000
+    },
+    {
+        "id": 10,
+        "firstName": "John",
+        "lastName": "Lemire",
+        "department": "IT Department",
+        "title": "CIO",
+        "birthday": "8/11/1963",
+        "salary": 80000
+    },
+    {
+        "id": 12,
+        "firstName": "Beverly",
+        "lastName": "Caperton",
+        "department": "HR Department",
+        "title": "Legal & Payroll Specialist",
+        "birthday": "10/17/1969",
+        "salary": 78000
+    },
+    {
+        "id": 13,
+        "firstName": "Amanda",
+        "lastName": "Diamond",
+        "department": "Finance Department",
+        "title": "Internal Auditor",
+        "birthday": "4/28/1975",
+        "salary": 67000
+    },
+    {
+        "id": 14,
+        "firstName": "Melissa",
+        "lastName": "Smith",
+        "department": "Finance Department",
+        "title": "Financial Analyst",
+        "birthday": "12/2/1991",
+        "salary": 75000
+    },
+    {
+        "id": 15,
+        "firstName": "Rodger",
+        "lastName": "Harryman",
+        "department": "Finance Department",
+        "title": "Director of Finance",
+        "birthday": "8/17/1958",
+        "salary": 196000
+    },
+    {
+        "id": 16,
+        "firstName": "Rachel",
+        "lastName": "Biddle",
+        "department": "IT Department",
+        "title": "Computer Systems Analyst",
+        "birthday": "1/5/1987",
+        "salary": 110000
+    }
+]
