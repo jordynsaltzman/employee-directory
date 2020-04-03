@@ -2,11 +2,12 @@ import React from "react";
 import "./style.css";
 
 // Using the datalist element we can create autofill suggestions based on the props.breeds array
-const SearchForm = props => {
+const SearchForm = (props) => {
   return (
     <div className="row formRow">
       <div className="col-md-12 titleDiv">
         <h1>Employee Directory</h1>
+        <h2>XYZ Company Inc.</h2>
       </div>
       <div className="col-md-4">
         <form className="search">

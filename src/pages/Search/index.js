@@ -10,7 +10,7 @@ const Search = () => {
     employeeDb,
     search: "",
     originalDb: employeeDb,
-    dropdownVal: ""
+    dropdownVal: "",
   });
 
   const [search, setSearch] = useState("");
@@ -19,7 +19,7 @@ const Search = () => {
   const refreshEmployees = () => {
     for (let i = 0; i < employeeState.employeeDb.length; i++) {
       API.employeeImage(employeeState.employeeDb[i].firstName)
-        .then(imageUrl => {
+        .then((imageUrl) => {
           employeeState.employeeDb[i].imageUrl = imageUrl.config.url.replace(
             "https://cors-anywhere.herokuapp.com/",
             ""
@@ -29,11 +29,11 @@ const Search = () => {
             employeeDb: employeeState.employeeDb,
             search: employeeState.search,
             originalDb: employeeState.originalDb,
-            dropdownVal: employeeState.dropdownVal
+            dropdownVal: employeeState.dropdownVal,
           });
           console.log(employeeState.employeeDb);
         })
-        .catch(err => setError(err));
+        .catch((err) => setError(err));
     }
   };
 
@@ -45,15 +45,15 @@ const Search = () => {
   }, []);
 
   //start of handleinputchange funtion for the search bar
-  const handleInputChange = event => {
+  const handleInputChange = (event) => {
     setEmployeeState({
       employeeDb,
       search: event.target.value.toLowerCase(),
       originalDb: employeeState.originalDb,
-      dropdownVal: employeeState.dropdownVal
+      dropdownVal: employeeState.dropdownVal,
     });
 
-    let newEmployeeDb = employeeState.employeeDb.filter(person => {
+    let newEmployeeDb = employeeState.employeeDb.filter((person) => {
       if (employeeState.search != undefined) {
         return (
           person.firstName
@@ -75,24 +75,24 @@ const Search = () => {
         employeeDb: employeeState.originalDb,
         search: event.target.value,
         originalDb: employeeState.originalDb,
-        dropdownVal: employeeState.dropdownVal
+        dropdownVal: employeeState.dropdownVal,
       });
     } else {
       setEmployeeState({
         employeeDb: newEmployeeDb,
         search: event.target.value,
         originalDb: employeeState.originalDb,
-        dropdownVal: employeeState.dropdownVal
+        dropdownVal: employeeState.dropdownVal,
       });
     }
   };
   //end of handleInput change function
 
   //function to sort employee db by salary
-  const handleDropdownChange = event => {
+  const handleDropdownChange = (event) => {
     setEmployeeState({
       ...employeeState,
-      dropdownVal: event.target.value
+      dropdownVal: event.target.value,
     });
     console.log(event.target.value);
 
@@ -116,7 +116,7 @@ const Search = () => {
             className="col-md-12"
             style={{
               textAlign: "center",
-              fontFamily: "'Work Sans', sans-serif"
+              fontFamily: "'Work Sans', sans-serif",
             }}
           >
             <p>{employeeState.employeeDb.length} Results</p>
@@ -133,7 +133,7 @@ const Search = () => {
           </div>
         </div>
 
-        {employeeState.employeeDb.map(employee => {
+        {employeeState.employeeDb.map((employee) => {
           return (
             <SearchResults
               firstName={employee.firstName}
