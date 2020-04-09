@@ -10,7 +10,7 @@ I originally wanted to generate my employee data from the [Random User Generator
 
 ## Preview
 
-![screenshot](client/public/assets/images/screenshot_employee_dir.JPG)
+![screenshot](/public/assets/images/screenshot_employee_dir.JPG)
 
 ## Assignment
 
